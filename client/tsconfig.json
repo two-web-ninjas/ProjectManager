@@ -3,6 +3,20 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@project-manager/component-base": [
+        "dist/component-base/component-base",
+        "dist/component-base"
+      ],
+      "@project-manager/component-ui": [
+        "dist/component-ui/component-ui",
+        "dist/component-ui"
+      ],
+      "@project-manager/core": [
+        "dist/core/core",
+        "dist/core"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
