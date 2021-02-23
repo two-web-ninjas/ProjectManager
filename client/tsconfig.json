@@ -3,6 +3,17 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@project-manager/component-base": [
+        "./projects/component-base/src/public-api"
+      ],
+      "@project-manager/component-ui": [
+        "./projects/component-ui/src/public-api"
+      ],
+      "@project-manager/core": [
+        "./projects/core/src/public-api"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
