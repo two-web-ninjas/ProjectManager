@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
-import { ComponentUiComponent } from './component-ui.component';
-import { DashboardUiComponent } from './controls/dashboard-ui/dashboard-ui.component';
-
-
+import { DashboardComponent } from './controls/dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [ComponentUiComponent, DashboardUiComponent],
+  declarations: [ DashboardComponent ],
   imports: [
   ],
-  exports: [ComponentUiComponent]
+  exports: [ DashboardComponent ]
 })
 export class ComponentUiModule { }
