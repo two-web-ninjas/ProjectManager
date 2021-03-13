@@ -1,3 +1,38 @@
-<div class="registraion-container">
+<div class="registraion-container" fxLayoutAlign="center center" fxFlexFill>
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary" fxLayoutAlign="center center">Registration</mat-toolbar>
+    <form fxLayoutAlign="stretch" fxLayout="column" (submit)="$event.preventDefault();" autocomplete="off">
+      <mat-form-field>
+        <input matInput placeholder="Username">
+      </mat-form-field>
 
+      <mat-form-field>
+        <input matInput placeholder="Firstname">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Lastname">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="email" placeholder="Email">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Date of birth">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="Confirm password">
+      </mat-form-field>
+
+      <button mat-raised-button type="submit" color="primary">Submit</button>
+    </form>
+  </mat-card>
 </div>
