@@ -21,6 +21,7 @@ namespace ProjectManager.Infrastructure.Data
             builder.ApplyConfiguration(new UserConfiguration());
             builder.ApplyConfiguration(new RoleConfiguration());
 
+
             builder.Entity<IdentityUserClaim<int>>(entity =>
             {
                 entity.ToTable("UserClaims");
@@ -28,6 +29,10 @@ namespace ProjectManager.Infrastructure.Data
             builder.Entity<IdentityRoleClaim<int>>(entity =>
             {
                 entity.ToTable("RoleClaims");
+            });
+            builder.Entity<IdentityUserRole<int>>(entity =>
+            {
+                entity.ToTable("UserRoles");
             });
             builder.Entity<IdentityUserLogin<int>>(entity =>
             {
